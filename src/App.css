@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.main{
+  padding: 20px;
+}
+
+.main .main-heading{
+  font-size: 30px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.main .card-box{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 20px 0px;
+}
