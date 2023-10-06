@@ -12,14 +12,58 @@ body{
   padding: 20px;
 }
 
-.main .main-heading{
-  font-size: 30px;
-  text-align: center;
-  font-weight: 400;
-}
 
 .main .card-box{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 20px 0px;
+  gap: 10px;
 }
+
+
+.box-heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.box-heading .heading{
+  color: #000;
+  font-weight: 400;
+}
+
+.main .box-heading .card-button{
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: #000;
+  background-color: #F7E7CE;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  border: 1px solid rgba(0,0,0,.2);
+}
+
+
+@media only screen and (max-width: 992px){
+  .main .card-box{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+}
+
+@media only screen and (max-width: 768px){
+  .main .card-box{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+
+
+@media only screen and (max-width: 568px){
+  .main .card-box{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+}
+
